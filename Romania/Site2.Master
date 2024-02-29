@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="Romania.Site2" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Oded Fit</title>
+                <link href="css/StyleSheet1.css" rel="stylesheet" />
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   
+      <nav>
+          <ul class="menu"; class="titles" >
+             
+              <li>
+               <a href="https://oded-highschool.mashov.info/">   <img src="https://oded-highschool.mashov.info/wp-content/uploads/sites/191/2023/07/%D7%9C%D7%95%D7%92%D7%95-%D7%9C%D7%A8%D7%95%D7%97%D7%91-%D7%98%D7%9C%D7%99-%D7%90%D7%9C%D7%91%D7%96-2048x809.png"class="image"/></a>
+              </li>
+      
+
+        <li class="menu_list">
+       <a href="אימונים.aspx" class="menu_link">אימונים</a>      
+        </li>
+        <li class="menu_list">
+       <a href="ספורטאים.aspx" class="menu_link">ספורטאים</a>
+        </li>
+        <li class="menu_list">
+       <a href="ראשי.aspx" class="menu_link">ראשי </a>
+        </li>
+        <li class="menu_list">
+       <a href="תזונה.aspx" class="menu_link">תזונה</a>
+            </li>
+               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    </ul>
+          <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      
+
+ <li class="menu_list">
+<a href="אימונים.aspx" class="menu_link">אימונים</a>      
+ </li>
+ <li class="menu_list">
+<a href="ספורטאים.aspx" class="menu_link">ספורטאים</a>
+ </li>
+ <li class="menu_list">
+<a href="ראשי.aspx" class="menu_link">ראשי </a>
+ </li>
+ <li class="menu_list">
+<a href="תזונה.aspx" class="menu_link">תזונה</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="https://oded-highschool.mashov.info/">   <img src="https://oded-highschool.mashov.info/wp-content/uploads/sites/191/2023/07/%D7%9C%D7%95%D7%92%D7%95-%D7%9C%D7%A8%D7%95%D7%97%D7%91-%D7%98%D7%9C%D7%99-%D7%90%D7%9C%D7%91%D7%96-2048x809.png"class="image"/></a>
+
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+        </nav>
+       <div>
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           </asp:ContentPlaceHolder>
+       </div>
+
+
+</body>
+</html>
